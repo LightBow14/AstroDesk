@@ -6,9 +6,9 @@
   "description": "Orbital Dynamics Simulator",
   "type": "module",
   "author": {
-  "name": "Alejandro Coello-Veillette"
-},
-
+    "name": "Alejandro Coello-Veillette"
+  },
+  "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build && electron-builder",
@@ -40,5 +40,18 @@
     "vite-plugin-electron": "^0.28.6",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "main": "dist-electron/main.js"
+  "build": {
+    "appId": "com.astrodesk.app",
+    "productName": "AstroDesk",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.education"
+    }
+  }
 }
