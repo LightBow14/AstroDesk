@@ -25,13 +25,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # --- THIS IS THE NEW STEP ---
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: AstroDesk-${{ matrix.os }}
           path: |
-            dist/*.exe
-            dist/*.dmg
-            release/*.exe
-            release/*.dmg
+            **/dist/*.exe
+            **/dist/*.dmg
+            **/release/*.exe
+            **/release/*.dmg
+            **/out/*.exe
+            **/out/*.dmg
