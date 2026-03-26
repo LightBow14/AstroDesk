@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# 🚀 AstroDesk
+**An Advanced Orbital Dynamics Simulator for Aerospace Engineering.**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AstroDesk is a high-fidelity desktop application built to visualize Keplerian elements, N-body physics, and satellite telemetry in real-time. Designed for aerospace engineering students and orbital mechanics enthusiasts.
 
-Currently, two official plugins are available:
+## 🛰️ Key Features
+* **Real-Time Telemetry:** Live calculation of Altitude, Velocity, and Orbital Period.
+* **State Vector Integration:** Input Cartesian $(x, y, z)$ or Polar coordinates to calculate an orbit.
+* **Keplerian Visualization:** Dynamic 3D rendering of orbits based on Classical Orbital Elements (COEs).
+* **N-Body Simulation:** Experimental support for multi-body gravitational interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Engineering Stack
+* **Core:** [Electron](https://www.electronjs.org/) (Cross-platform Desktop Framework)
+* **Frontend:** [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Physics:** Custom TypeScript integrators for orbital propagation.
 
-## Expanding the ESLint configuration
+## 📥 Installation
+Once the GitHub build finishes, you can download the latest installers from the **Actions** tab:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Windows:** Download the `.exe` setup file from the `windows-latest` artifact.
+2. **macOS:** Download the `.dmg` file from the `macos-latest` artifact.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+*Developed by Alejandro Coello-Veillette — University of Virginia*
